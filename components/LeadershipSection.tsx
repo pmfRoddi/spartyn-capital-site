@@ -2,18 +2,25 @@ type LeaderProps = {
   name: string;
   title: string;
   bio: string;
+  image: string;
 };
 
-function LeaderCard({ name, title, bio }: LeaderProps) {
+function LeaderCard({ name, title, bio, image }: LeaderProps) {
   return (
-    <div className="rounded-3xl border border-sky-500/20 bg-white/[0.03] p-8">
-      <div className="mb-6 h-24 w-24 rounded-full bg-gradient-to-br from-sky-400/50 to-sky-900/50" />
+    <div className="grid gap-8 rounded-3xl border border-sky-500/20 bg-white/[0.03] p-6 md:grid-cols-[320px_1fr] md:p-8">
+      <img
+        src={image}
+        alt={name}
+        className="h-full min-h-[360px] w-full rounded-3xl object-cover"
+      />
 
-      <h3 className="text-2xl font-bold">{name}</h3>
+      <div className="flex flex-col justify-center">
+        <h3 className="text-3xl font-bold">{name}</h3>
 
-      <p className="mt-2 text-sky-400">{title}</p>
+        <p className="mt-2 text-sky-400">{title}</p>
 
-      <p className="mt-4 leading-7 text-white/60">{bio}</p>
+        <p className="mt-6 max-w-2xl leading-8 text-white/60">{bio}</p>
+      </div>
     </div>
   );
 }
@@ -31,13 +38,12 @@ export default function LeadershipSection() {
         </h2>
       </div>
 
-      <div className="max-w-2xl">
-        <LeaderCard
-          name="Paul Rodriguez"
-          title="Founder & Managing Partner"
-          bio="Founder of Spartyn Capital and Praxis. Focused on venture creation, strategic partnerships, capital strategy, technology incubation, and helping founders transform ambitious ideas into scalable businesses."
-        />
-      </div>
+      <LeaderCard
+        name="Paul Rodriguez"
+        title="Founder & Managing Partner"
+        image="/images/paul-rodriguez.jpg"
+        bio="Founder of Spartyn Capital and Praxis. Focused on venture creation, strategic partnerships, capital strategy, technology incubation, and helping founders transform ambitious ideas into scalable businesses."
+      />
     </section>
   );
 }
