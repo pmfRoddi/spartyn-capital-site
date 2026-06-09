@@ -12,9 +12,12 @@ export default function SiteFooter() {
         </div>
 
         <div className="flex flex-wrap gap-5">
-          <Link href="/">Spartyn Capital</Link>
+          <Link href="/">Spartyn</Link>
           <Link href="/praxis">Praxis</Link>
-          <a href="mailto:paul@spartyncapital.com">Contact</a>
+          <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
+          <Link href="/support">Support</Link>
+          <Link href="/data-deletion">Data Deletion</Link>
         </div>
       </div>
 
