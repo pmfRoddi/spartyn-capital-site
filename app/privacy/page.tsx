@@ -32,8 +32,7 @@ export default function PrivacyPage() {
 
       <h2 className="text-2xl font-bold text-white">Contact</h2>
       <p>
-        For privacy questions, contact: paul@spartyncapital.com
-      </p>
+        For privacy questions, contact: advisory@spartyncapital.com      </p>
     </LegalPage>
   );
 }

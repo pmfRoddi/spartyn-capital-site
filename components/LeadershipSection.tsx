@@ -31,17 +31,11 @@ export default function LeadershipSection() {
         </h2>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="max-w-2xl">
         <LeaderCard
           name="Paul Rodriguez"
-          title="Founder"
-          bio="Founder of Spartyn Capital and Praxis. Focused on venture creation, strategic partnerships, capital access, and emerging technologies."
-        />
-
-        <LeaderCard
-          name="Future Partner"
-          title="Strategic Advisor"
-          bio="Reserved for future operating partners, advisors, or venture leadership."
+          title="Founder & Managing Partner"
+          bio="Founder of Spartyn Capital and Praxis. Focused on venture creation, strategic partnerships, capital strategy, technology incubation, and helping founders transform ambitious ideas into scalable businesses."
         />
       </div>
     </section>

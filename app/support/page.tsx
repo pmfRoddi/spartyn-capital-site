@@ -9,7 +9,7 @@ export default function SupportPage() {
       </p>
 
       <h2 className="text-2xl font-bold text-white">Support Email</h2>
-      <p>paul@spartyncapital.com</p>
+      <p>advisory@spartyncapital.com</p>
 
       <h2 className="text-2xl font-bold text-white">What to Include</h2>
       <p>
