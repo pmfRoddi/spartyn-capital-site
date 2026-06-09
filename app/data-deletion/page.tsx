@@ -10,9 +10,7 @@ export default function DataDeletionPage() {
 
       <h2 className="text-2xl font-bold text-white">How to Request Deletion</h2>
       <p>
-        Email paul@spartyncapital.com with the subject line “Data Deletion
-        Request.” Include the email address or account information associated
-        with your request.
+        Email advisory@spartyncapital.com with the subject line “Data Deletion Request.”
       </p>
 
       <h2 className="text-2xl font-bold text-white">Verification</h2>
