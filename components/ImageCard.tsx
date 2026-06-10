@@ -1,32 +1,21 @@
-export default function ImageCard({
-  title,
-  text,
-  image,
-  tall = false,
-}: {
+type ImageCardProps = {
   title: string;
   text: string;
   image: string;
   tall?: boolean;
-}) {
+};
+
+export default function ImageCard({ title, text, image, tall }: ImageCardProps) {
   return (
-    <div
-      className={`group overflow-hidden rounded-3xl border border-sky-500/20 bg-[#07111f] shadow-[0_0_40px_rgba(14,165,233,0.08)] transition duration-300 hover:-translate-y-1 hover:border-sky-400/50 ${
-        tall ? "min-h-[360px]" : ""
-      }`}
-    >
-      <div className="relative h-56 overflow-hidden">
-        <img
-          src={image}
-          alt=""
-          className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#07111f] via-[#07111f]/25 to-transparent" />
+    <div className="overflow-hidden rounded-3xl border border-sky-500/20 bg-[#07111f] shadow-[0_0_35px_rgba(14,165,233,0.08)]">
+      <div className={tall ? "h-56 md:h-72" : "h-52 md:h-60"}>
+        <img src={image} alt={title} className="h-full w-full object-cover" />
       </div>
 
-      <div className="p-6">
-        <h3 className="mb-2 text-xl font-bold">{title}</h3>
-        <p className="text-sm leading-6 text-white/60">{text}</p>
+      <div className="p-6 md:p-7">
+        <h3 className="text-2xl font-black leading-tight">{title}</h3>
+
+        <p className="mt-3 text-base leading-7 text-white/60">{text}</p>
       </div>
     </div>
   );
