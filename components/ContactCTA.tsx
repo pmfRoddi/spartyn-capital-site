@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactCTA({
   label = "Contact",
   title = "Have an opportunity worth discussing?",
@@ -42,12 +44,12 @@ export default function ContactCTA({
             className="w-full resize-none rounded-2xl border border-white/10 bg-[#030712] px-4 py-4 text-base text-white outline-none placeholder:text-white/35 focus:border-sky-400"
           />
 
-          <a
-            href="mailto:advisory@spartyncapital.com"
+          <Link
+            href="/contact"
             className="flex w-full justify-center rounded-full bg-sky-400 px-6 py-4 text-center text-base font-black leading-tight text-[#03111f]"
           >
             {buttonText}
-          </a>
+          </Link>
         </form>
       </div>
     </section>

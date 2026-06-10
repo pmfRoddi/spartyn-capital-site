@@ -21,6 +21,7 @@ export default function SiteNav({
           <Link href="/about">About</Link>
           <Link href="/praxis">Praxis</Link>
           <Link href="/support">Support</Link>
+          <Link href="/contact">Contact</Link>
         </div>
 
         <button
@@ -45,6 +46,9 @@ export default function SiteNav({
             </Link>
             <Link href="/support" onClick={() => setOpen(false)}>
               Support
+            </Link>
+            <Link href="/contact" onClick={() => setOpen(false)}>
+              Contact
             </Link>
           </div>
         </div>

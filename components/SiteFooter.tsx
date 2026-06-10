@@ -27,9 +27,10 @@ export default function SiteFooter() {
 
           <div>
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-white">
-              Support
+              Contact
             </p>
             <div className="flex flex-col gap-2">
+              <Link href="/contact">Contact</Link>
               <Link href="/support">Support</Link>
               <a href="mailto:advisory@spartyncapital.com">
                 advisory@spartyncapital.com
