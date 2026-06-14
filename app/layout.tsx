@@ -4,31 +4,39 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://spartyncapital.com"),
   title: {
-    default: "Spartyn Capital",
+    default:
+      "Spartyn Capital | Strategic Advisory, Capital Structuring & Venture Development",
     template: "%s | Spartyn Capital",
   },
   description:
-    "Strategic advisory, capital access, venture development, and technology incubation through Praxis.",
-  keywords: [
-    "Spartyn Capital",
-    "Praxis",
-    "capital strategy",
-    "strategic advisory",
-    "venture studio",
-    "technology incubator",
-    "AI",
-    "emerging technology",
-  ],
+    "Spartyn Capital provides structured strategy, capital advisory, venture development, and execution support for founders, operators, and growth-stage opportunities.",
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
     title: "Spartyn Capital",
-    description: "Capital. Strategy. Access.",
+    description:
+      "Structured strategy, disciplined execution, and capital advisory for high-growth opportunities.",
     url: "https://spartyncapital.com",
     siteName: "Spartyn Capital",
     type: "website",
   },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Spartyn Capital",
+  legalName: "Spartyn Capital LLC",
+  url: "https://spartyncapital.com",
+  description:
+    "Spartyn Capital provides structured strategy, capital advisory, venture development, and execution support.",
+  email: "advisory@spartyncapital.com",
+  sameAs: [],
 };
 
 export default function RootLayout({
@@ -38,7 +46,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

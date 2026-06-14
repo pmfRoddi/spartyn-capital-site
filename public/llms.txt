@@ -1,0 +1,37 @@
+# Spartyn Capital
+
+Spartyn Capital provides structured strategy, capital advisory, venture development, and execution support for founders, operators, and growth-stage opportunities.
+
+## Mission
+
+Spartyn Capital identifies, builds, and supports the next generation of impactful companies, technologies, and ideas.
+
+## Core Pages
+
+- https://spartyncapital.com
+  - Overview of Spartyn Capital, advisory services, strategy, and venture development.
+
+- https://spartyncapital.com/about
+  - Background on Spartyn Capital, leadership, mission, and operating approach.
+
+- https://spartyncapital.com/praxis
+  - Praxis, the venture studio and technology incubator connected to Spartyn Capital.
+
+- https://spartyncapital.com/contact
+  - Contact page for advisory inquiries, business opportunities, and partnerships.
+
+- https://spartyncapital.com/support
+  - Support page for app, website, business, and product-related inquiries.
+
+- https://spartyncapital.com/privacy
+  - Privacy Policy.
+
+- https://spartyncapital.com/terms
+  - Terms of Service.
+
+- https://spartyncapital.com/data-deletion
+  - Data deletion request instructions.
+
+## Contact
+
+advisory@spartyncapital.com
