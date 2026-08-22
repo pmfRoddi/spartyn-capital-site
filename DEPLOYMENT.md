@@ -14,9 +14,6 @@ Spartyn Capital:
 
 /
 
-Praxis:
-
-/praxis
 
 ## Deploy
 

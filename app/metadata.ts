@@ -7,11 +7,8 @@ export const metadata: Metadata = {
 
   keywords: [
     "Spartyn Capital",
-    "Praxis",
-    "venture studio",
     "capital advisory",
     "technology",
-    "AI",
   ],
 
   openGraph: {

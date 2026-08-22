@@ -1,22 +1,2 @@
 import Link from "next/link";
-
-export default function Logo({
-  variant = "spartyn",
-}: {
-  variant?: "spartyn" | "praxis";
-}) {
-  return (
-    <Link
-      href={variant === "praxis" ? "/praxis" : "/"}
-      className="font-black tracking-[0.35em]"
-    >
-      {variant === "praxis" ? (
-        <>
-          PR<span className="text-sky-400">A</span>XIS
-        </>
-      ) : (
-        "SPARTYN"
-      )}
-    </Link>
-  );
-}
+export default function Logo(){return <Link href="/" className="inline-flex items-center gap-3" aria-label="Spartyn Capital home"><span className="text-[1.25rem] font-light tracking-[.18em] text-[#111411]">SPARTYN</span><span className="h-9 w-px bg-[#07583f]" aria-hidden="true"/><span className="text-[.56rem] font-semibold tracking-[.28em] text-[#343934]">CAPITAL</span></Link>}

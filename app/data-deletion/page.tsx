@@ -5,21 +5,21 @@ export default function DataDeletionPage() {
     <LegalPage eyebrow="Privacy" title="Data Deletion Request">
       <p>
         You may request deletion of personal information associated with Spartyn
-        Capital, Praxis, or any related application or service.
+        Capital or any related application or service.
       </p>
 
-      <h2 className="text-2xl font-bold text-white">How to Request Deletion</h2>
+      <h2>How to Request Deletion</h2>
       <p>
         Email advisory@spartyncapital.com with the subject line “Data Deletion Request.”
       </p>
 
-      <h2 className="text-2xl font-bold text-white">Verification</h2>
+      <h2>Verification</h2>
       <p>
         We may ask for reasonable verification before deleting data to protect
         users and prevent unauthorized deletion requests.
       </p>
 
-      <h2 className="text-2xl font-bold text-white">Processing</h2>
+      <h2>Processing</h2>
       <p>
         Once verified, we will delete or de-identify eligible personal data
         unless retention is required for legal, security, fraud prevention, or

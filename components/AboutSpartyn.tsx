@@ -15,7 +15,7 @@ export default function AboutSpartyn() {
           Spartyn Capital works with founders, operators, investors, and
           emerging ventures to help turn ambitious ideas into scalable
           businesses. Through strategic advisory, capital access, venture
-          development, and the Praxis venture studio, we focus on what comes
+          development, and applied technology research, we focus on what comes
           next.
         </p>
       </div>

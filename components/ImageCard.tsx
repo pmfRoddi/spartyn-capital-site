@@ -8,8 +8,8 @@ type ImageCardProps = {
 export default function ImageCard({ title, text, image, tall }: ImageCardProps) {
   return (
     <div className="overflow-hidden rounded-3xl border border-sky-500/20 bg-[#07111f] shadow-[0_0_35px_rgba(14,165,233,0.08)]">
-      <div className={tall ? "h-56 md:h-72" : "h-52 md:h-60"}>
-        <img src={image} alt={title} className="h-full w-full object-cover" />
+      <div className={`relative ${tall ? "h-56 md:h-72" : "h-52 md:h-60"}`}>
+        <Image src={image} alt={title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
       </div>
 
       <div className="p-6 md:p-7">
@@ -20,3 +20,4 @@ export default function ImageCard({ title, text, image, tall }: ImageCardProps) 
     </div>
   );
 }
+import Image from "next/image";
